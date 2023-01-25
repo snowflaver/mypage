@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Dokdo', cursive;
+        }
+        .main {
+            width: 100%;
+            height: 250px;
+
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.anime-pictures.net/5b9/5b97e1f52b2f4c548dd1c6f311e4be14.png?if=ANIME-PICTURES.NET_-_524896-2050x512-touhou-yakumo+yukari-saigyouji+yuyuko-mivit-long+hair-fringe.png");
+            background-position: center;
+            background-size: cover;
+
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mycommant {
+            color: gray;
+        }
+        .wraf {
+            max-width: 1200px;
+            width: 90%;
+            margin: 30px auto 0px auto;
+        }
+        .mypst {
+            max-width: 500px;
+            width: 90%;
+
+            margin: 30px auto 0px auto;
+
+            box-shadow: 0px 0px 3px 0px gray;
+            padding: 20px;
+        }
+        .mybtns {
+            margin-top: 10px;
+
+        }
+        .mybtns > button {
+            margin-right: 20px;
+
+            border: 1px solid yellow;
+        }
+        .mybtns > button:hover {
+            border: 2.5px solid red;
+        }
+    </style>
+</head>
+    <body>
+        <div class="main">
+            <h1>스스로 생각하는 재미잇는 애니들</h1>
+        </div>
+        <div class="mypst">
+            <div class="form-floating mb-3">
+                <input type="애니URL" class="form-control" id="floatingInput" placeholder="example.jpeg">
+                <label for="floatingInput">애니매이션 추천URL</label>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                          style="height: 100px"></textarea>
+                <label for="floatingTextarea2">추천이유</label>
+            </div>
+            <div class="mybtns">
+                <button type="button" class="btn btn-dark">등록하기</button>
+            </div>
+        </div>
+        <div class="wraf">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://w.namu.la/s/7348c3406e86bf52d31fd33d573d73a543b1797ba5a645b80bb96f9ebd104ab7dc557f81b85647de482daf75804d69502eb6cc2de6d2d7206f854351a61e06e15f8e5fa836420c53015a35a03b5d357e93d550c6580486db676ebba6e27da25535bdd279afa29e437fd715f742e11658"
+                             class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title-1">신들에게 주워진 남자</h5>
+                            <p class="card-text">인생에서 불행이란 불행은 다 경험해 본 불운남 타케바야시 료마. 생전에는 어린시절부터 학대만 일삼아온 부모님, 직장인이 되어
+                                취직한 곳은 블랙기업, 상사는 악질들... 마지막까지도 불운 그 자체였다. 그동안 암울한 인생의 보답마저도 갑작스러운 죽음, 그것도 어처구니없게도 재채기하다
+                                뇌출혈?!
+                                사후세계에서 신들에게 따져보니 워낙 불운으로 점철된지라 이번에 새로 환생시켜줄 예정이라 한다.
+                                신들은 그를 딱히 여겨 마법이 존재하는 이세계에서 마법능력을 가진 소년으로 환생시켜주고 료마는 새 몸으로 조용한 삶을 시작한다., 장르는 판타지 소설, 이세계
+                                전이물, 그리고 슬라임 노동착취물 슬로우 라이프물이다.</p>
+                            <p class="mycommant">생각보다 많은 슬라임종류를 보고 편하게 산다는게 어떤건지 볼수잇는 힐링애니</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://w.namu.la/s/84d13955fbfa7000e3201cf1fe601fa6aa6c99053f9b90cab27dd72ea46370cfa2f78fe7bed963871d300cc6218a0a23a75d285654833b3f237c3b4dda2df85c10bacf33269542610273a03bdc450ffa11ef58596270fa5c3d450095a62442a9edfbaf787dda0904937710f2310441b7"
+                             class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title-2">리아데일의 대지에서</h5>
+                            <p class="card-text">유복한 가정에서 자랐지만 비행기 사고로 부모는 죽고 자신도 반신불수에 생명유지장치가 없으면 죽게 되는 시한부의 몸으로 병실에서
+                                누워 있던 소녀 카가미 케이나는, VRMMORPG 리아데일 안에서 노는 날들을 보내고 있었다.
+                                그러던 어느 날 눈을 뜨면서, 그곳은 자신이 알고 있는 리아데일의 완결로부터 200년이 경과한 세계에서, 자신은 리아데일의 아바타인 케나가 되어 있었다.
+                                리아데일이 이렇게까지 변한 건 둘째치고, 로그아웃도, 운영진에게 연락도 못한 채 혼란스러워하는 케이나에게 병원의 급작스러운 정전 사태로 인해 생명유지장치가
+                                정지되어 본인의 육체가 사망했다는 사실을 서포트 AI는 통보한다.
+                                즉, 정전으로 인해 생명유지 장치가 정지되고 그 순간에 자신이 이미 죽어서 자신의 주 아바타인 하이엘프 케나로 이세계 전생한 걸 알게 된 케이나는 이 몸을
+                                통해 새로운 삶을 살기로 하는데...</p>
+                            <p class="mycommant">엄청난 게임고인물이 꿈꾸는 이상향?을 그린 힐링?애니</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9788925236650.jpg"
+                             class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title-3">무적코털 보보보</h5>
+                            <p class="card-text">일본의 개그 만화. 작가는 사와이 요시오(澤井啓夫). 원제는 주인공의 이름과 같은 보보보보 보보보지만, 한국에 들어오며 무적코털
+                                보보보라는 이름으로 바뀌었다.
+                                후속작으로 진설(眞說) 보보보-보 보-보보, 스핀오프로는 두둥실! 돈벼락이 있다.</p>
+                            <p class="mycommant">일본의 개그만화에서 만든 애니라 일본인들의 개그코드에 맞춰져잇엇서 보는사람마다 호불호가 갈리지만 상당히 재미잇는
+                                개그코미디애니</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://w.namu.la/s/5fd7b33bc23df1ba10d88ab092980ca3c2b681009ef86a57901c66e090ffcf0777eddbff2b7c265642fa0daa762ca3b5b1a4c30e622527b16d21e68be6c5cb84101801f2797b35ffe01855b9110993fcbb9e01238449e38b6a3365adcf0de772e66f02a01018a238fc85bbb1bc6a09f6"
+                             class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title-4">사신짱 드롭킥</h5>
+                            <p class="card-text">진보초의 낡은 아파트에 사는 소녀·하나조노 유리네에 의해 어느 날 강제로 인간계에 소환돼버린 마계의 악마·사신 짱. 그런데,
+                                유리네는 소환 주문만 알고 귀환 주문은 알지 못해 사신 짱은 마계로 돌아갈 수가 없게 되고……. 어쩔 수 없이 유리네의 좁다란 집에서 눌러살게 된다.
+                                하지만 사신 짱은 포기하지 않았다! 왜냐하면 인간에게 소환된 악마는, 소환자가 죽으면 마계로 돌아갈 수 있으니까. 그리하여 유리네에게 사신 짱 필살의 드롭킥이
+                                작렬할―예정이었지만……?! 유리네에 의해 인간계로 소환된 사신짱과 유리네의 좌충우돌 동거생활을 그리고 있다.</p>
+                            <p class="mycommant">악마와 인간의 서로의 생존을 위한 대환장 개그일상물 애니</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
